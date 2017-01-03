@@ -103,3 +103,8 @@ function colorgrid( )
 #bakcyn='\e[46m'   # Cyan
 #bakwht='\e[47m'   # White
 #txtrst='\e[0m'    # Text Reset
+# Initialization for FDK command line tools.Tue Jan  3 16:35:07 2017
+FDK_EXE="/Users/ItsEmily/bin/FDK/Tools/osx"
+PATH=${PATH}:"/Users/ItsEmily/bin/FDK/Tools/osx"
+export PATH
+export FDK_EXE
