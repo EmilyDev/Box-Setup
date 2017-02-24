@@ -28,7 +28,7 @@ fi
 
 
 # MainLine
-export PS1="$__user_and_host\[\033[01;38;5;214m\]@\[$txtgrn\][\W]\[$txtcyn\]$git_branch\[$txtred\]\$git_dirty\[$txtrst\]--> "
+export PS1="$__user_and_host\[\033[01;38;5;214m\]@\[$txtgrn\][\W]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]--> "
 
 
 
@@ -103,6 +103,7 @@ function colorgrid( )
 #bakcyn='\e[46m'   # Cyan
 #bakwht='\e[47m'   # White
 #txtrst='\e[0m'    # Text Reset
+
 # Initialization for FDK command line tools.Tue Jan  3 16:35:07 2017
 FDK_EXE="/Users/ItsEmily/bin/FDK/Tools/osx"
 PATH=${PATH}:"/Users/ItsEmily/bin/FDK/Tools/osx"
