@@ -109,3 +109,4 @@ FDK_EXE="/Users/ItsEmily/bin/FDK/Tools/osx"
 PATH=${PATH}:"/Users/ItsEmily/bin/FDK/Tools/osx"
 export PATH
 export FDK_EXE
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
