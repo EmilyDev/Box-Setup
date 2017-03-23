@@ -1,16 +1,24 @@
-#PostGres
+#--------------
+#PostGres path
+#--------------
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-
-export CLICOLOR=1
+#export CLICOLOR=1
+#-----------------
 #Pulling from Git
+#-----------------
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 
+#-----------------------------------
+#Random emojis because I like it
+#-----------------------------------
 emojis=(🐶 🐺 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐮 🐵 🐼 🐧 🐍 🐢 🐙 🐠 🐳 🐬 🐥)
 emoji='`echo ${emojis[$RANDOM % 22]}`'
 
-
+#--------------------------
+#Custom colors for my name
+#--------------------------
 if [ "$USER" = "ItsEmily" ]; then
     I="\[\033[01;38;5;26m\]I"
     t="\[\033[01;38;5;33m\]t"
@@ -25,18 +33,14 @@ else
     __user_and_host="\[\033[01;36m\]\u"
 fi
 
-
-
+#----------
 # MainLine
-export PS1="$__user_and_host\[\033[01;38;5;214m\]@\[$txtgrn\][\W]\[$txtcyn\]$git_branch\[$txtred\]\$git_dirty\[$txtrst\]--> "
+#----------
+export PS1="$__user_and_host\[\033[01;38;5;214m\]@\[$txtgrn\][\W]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]--> "
 
-
-
-
-
-
-#copy and paste into terminal to see colors
-
+#----------------------------------------------------------
+#copy and paste function below into terminal to see colors
+#----------------------------------------------------------
 function colorgrid( )
 {
     iter=16
@@ -69,7 +73,9 @@ function colorgrid( )
         printf '\r\n'
     done
 }
-
+#-----------------------------
+#TextColors for convenience
+#-----------------------------
 #txtblk='\e[0;30m' # Black - Regular
 #txtred='\e[0;31m' # Red
 #txtgrn='\e[0;32m' # Green
@@ -103,8 +109,12 @@ function colorgrid( )
 #bakcyn='\e[46m'   # Cyan
 #bakwht='\e[47m'   # White
 #txtrst='\e[0m'    # Text Reset
+
+#-------------------------------------------------------------------
 # Initialization for FDK command line tools.Tue Jan  3 16:35:07 2017
+#-------------------------------------------------------------------
 FDK_EXE="/Users/ItsEmily/bin/FDK/Tools/osx"
 PATH=${PATH}:"/Users/ItsEmily/bin/FDK/Tools/osx"
 export PATH
 export FDK_EXE
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

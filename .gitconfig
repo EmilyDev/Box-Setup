@@ -1,0 +1,10 @@
+[user]
+	name = Emily H.
+	email = emilyyho33@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	b = branch
+	ci = commit
+	st = status
