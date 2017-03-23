@@ -3,18 +3,19 @@
 #--------------
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-
-export CLICOLOR=1
+#export CLICOLOR=1
 #-----------------
 #Pulling from Git
 #-----------------
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
+
 #-----------------------------------
 #Random emojis because I like it
-#----------------------------------- 
+#-----------------------------------
 emojis=(🐶 🐺 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐮 🐵 🐼 🐧 🐍 🐢 🐙 🐠 🐳 🐬 🐥)
 emoji='`echo ${emojis[$RANDOM % 22]}`'
+
 #--------------------------
 #Custom colors for my name
 #--------------------------
@@ -73,7 +74,7 @@ function colorgrid( )
     done
 }
 #-----------------------------
-#TextColors for convienence
+#TextColors for convenience
 #-----------------------------
 #txtblk='\e[0;30m' # Black - Regular
 #txtred='\e[0;31m' # Red
@@ -109,7 +110,9 @@ function colorgrid( )
 #bakwht='\e[47m'   # White
 #txtrst='\e[0m'    # Text Reset
 
+#-------------------------------------------------------------------
 # Initialization for FDK command line tools.Tue Jan  3 16:35:07 2017
+#-------------------------------------------------------------------
 FDK_EXE="/Users/ItsEmily/bin/FDK/Tools/osx"
 PATH=${PATH}:"/Users/ItsEmily/bin/FDK/Tools/osx"
 export PATH
